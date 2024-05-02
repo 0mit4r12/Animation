@@ -1,145 +1,143 @@
 :root {
-    --color1:#C5D9D2;
-    --color2:#AEBFB9;
-    --color3:#73726F;
-    --color4:#403432;
-    --color5:#0D0000;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: "manometer-serif-high", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: var(--color5);
-    background-color: var(--color4);
-  }
-  
-  .main {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 24px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main__title {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    margin: 2rem;
-    color: var(--color2);
-  }
-  .main__video {
-    width: 100%;
-    height: 900px;
-  }
-  .main__video video {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-  }
-  .main__video p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 1rem 1.4rem;
-    color: var(--color2);
-  }
-  .main__container {
-    width: 90%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-radius: 12px;
-    background-color: var(--color1);
-    -webkit-transition: 0.3s ease all;
-    transition: 0.3s ease all;
-  }
-  .main__container video {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px 12px 0 0;
-  }
-  .main__container p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 1.6rem;
-  }
-  .main__container:active {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    background-color: var(--color3);
-    color: var(--color2);
-  }
-  .main__container:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    background-color: var(--color3);
-    color: var(--color2);
-  }
-  
-  .footer {
-    background-color: var(--color5);
-    margin-top: 4rem;
-    padding-top: 24px;
-    color: var(--color1);
-  }
-  .footer__container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 8px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: var(--color5);
-  }
-  .footer__container h2 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    line-height: 1.2;
-  }
-  .footer__container ul li {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.2;
-  }
-  .footer__cc {
-    font-size: 1.2rem;
-    font-weight: 100;
-    line-height: 1.2;
-    text-align: center;
-    padding: 12px;
-  }
+  --color1:#C5D9D2;
+  --color2:#AEBFB9;
+  --color3:#73726F;
+  --color4:#403432;
+  --color5:#0D0000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "manometer-serif-high", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color5);
+  background-color: var(--color4);
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 2rem;
+  color: var(--color2);
+}
+.main__video {
+  width: 100%;
+}
+.main__video--src {
+  width: 100%;
+  border-radius: 12px;
+}
+.main__video p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1rem 1.4rem;
+  color: var(--color2);
+}
+.main__container {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  background-color: var(--color1);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.main__container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.main__container p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1.6rem;
+}
+.main__container:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: var(--color3);
+  color: var(--color2);
+}
+.main__container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+.footer {
+  background-color: var(--color5);
+  margin-top: 4rem;
+  padding-top: 24px;
+  color: var(--color1);
+}
+.footer__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--color5);
+}
+.footer__container h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.footer__container ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.footer__cc {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.2;
+  text-align: center;
+  padding: 12px;
+}
