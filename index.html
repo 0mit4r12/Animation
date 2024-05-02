@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disfunction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kjm6cud.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main__title">
+            <h1>Disfunction Animation</h1>
+        </div>
+        <div class="main__video">
+            <video controls="controls" id="lol" autoplay="autoplay" src="./assets/videoPrincipal.mp4" loop="loop">
+                <source src="./assets/videoPrincipal.mp4" type="video/mp4">
+            </video>
+            <p class="subtittle">Animacion Inicial</p>
+        </div>
+        <div class="main__container" onclick="changeVideo('Animacion 1', 0)">
+            <video class="main__container--video" src="./assets/video1.mp4"></video>
+            <p class="subtittle">Animacion 1</p>
+        </div>
+        <div class="main__container" onclick="changeVideo(this, 1)">
+            <video class="main__container--video" src="./assets/videoPrincipal.mp4"></video>
+            <p class="subtittle">Title Animation</p>
+        </div>
+        <div class="main__container" onclick="changeVideo(this, 2)">
+            <video src="./assets/videoPrincipal.mp4"></video>
+            <p class="subtittle">Title Animation</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <h2>Realizado Por</h2>
+            <ul>
+                <li>nn</li>
+                <li>nn</li>
+            </ul>
+        </div>
+        <div class="footer__cc">
+            <p>Todos los derechos reservados @Thevutman</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
